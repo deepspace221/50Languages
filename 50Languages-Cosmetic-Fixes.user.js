@@ -28,15 +28,15 @@ function Toggle(n) {
     var hn = 'hn_' + n
     var e = document.getElementById(sn)
     var f = document.getElementById(hn)
-    e.style.display = 'none';
-    f.style.display = 'inline-block';
+    e.style.display = 'none'
+    f.style.display = 'inline-block'
     f.onclick = false
 }
 
 function applyStyles(){
     var css = `
 a:hover {
-    text-decoration:none ;
+    text-decoration:none;
 }
 table a{
     font-size: 27px;
@@ -49,9 +49,9 @@ table a:hover{
     color: blue !important;
 }
 `
-    var style = document.createElement('style');
-    style.appendChild(document.createTextNode(css));
-    document.getElementsByTagName('head')[0].appendChild(style);
+    var style = document.createElement('style')
+    style.appendChild(document.createTextNode(css))
+    document.getElementsByTagName('head')[0].appendChild(style)
 }
 
 
