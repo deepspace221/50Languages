@@ -6,9 +6,22 @@
 // @author       snowman
 // @match        https://www.50languages.com/phrasebook/*
 // @grant        none
-// @updateURL      
-// @downloadURL   
+// @updateURL    https://raw.githubusercontent.com/deepspace221/50Languages/master/50%20Languages%20Cosmetic%20Fixes.js  
+// @downloadURL  https://raw.githubusercontent.com/deepspace221/50Languages/master/50%20Languages%20Cosmetic%20Fixes.js 
 // ==/UserScript==
+
+(function() {
+    ToggleAll()
+    applyStyles()
+})();
+
+
+function ToggleAll() {
+    var i;
+    for (i = 1; i <= 18; i++){
+        Toggle(i);
+    }
+}
 
 function Toggle(n) {
     var sn = 'sn_' + n
@@ -18,18 +31,9 @@ function Toggle(n) {
     e.style.display = 'none';
     f.style.display = 'inline-block';
     f.onclick = false
-  //  f.style.color = "green";
-  //  f.style.fontSize = "x-large";
 }
 
-function ToggleAll() {
-    var i;
-    for (i = 1; i <= 18; i++){
-        Toggle(i);
-    }
-}
-
-function applyStyle(){
+function applyStyles(){
     var css = `
 a:hover {
     text-decoration:none ;
@@ -49,10 +53,5 @@ table a:hover{
     style.appendChild(document.createTextNode(css));
     document.getElementsByTagName('head')[0].appendChild(style);
 }
-
-(function() {
-    ToggleAll()
-    applyStyle()
-})();
 
 
