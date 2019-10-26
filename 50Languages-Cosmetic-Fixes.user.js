@@ -34,15 +34,13 @@ function Toggle(n) {
 
 function applyStyles(){
     var css = `
-a:hover {
-    text-decoration:none;
-}
 table a{
     font-size: 27px;
     color: green;
 }
 table a:hover{
     color: green;
+    text-decoration:none;
 }
 .dropdown-mega-sub-nav a:visited{
     color: blue !important;
