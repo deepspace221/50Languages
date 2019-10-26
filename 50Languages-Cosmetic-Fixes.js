@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         50languages
-// @namespace    http://tampermonkey.net/
+// @name         50Languages-Cosmetic-Fixes
+// @namespace    https://github.com/deepspace221
 // @version      0.1
 // @description  Cosmetic Fixes
 // @author       snowman
